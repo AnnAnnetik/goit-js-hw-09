@@ -72,9 +72,11 @@ const galleryMarkup= images.map(image=>
   <img
     class="gallery-image"
     src="${image.preview}"
-        alt="${image.description }"
+        alt="${image.description}"
   />
 </a>
 </li>`).join('');
 
 gallery.insertAdjacentHTML('beforeend', galleryMarkup);
+
+
