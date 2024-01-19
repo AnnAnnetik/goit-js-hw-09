@@ -87,5 +87,16 @@ localStorage.setItem(key, jsonData);
 };
 
 function onSabmitForm(){
-  
+  const email = form.elements.email.value.trim();
+  const message = form.elements.message.value.trim();
+
+  if (email === '' || message === '') {
+            
+  e.preventDefault();
+        }else {
+          const data = getItemFromLS(localStorageKey);
+          console.log({ email, message });
+        }
 }
+
+
