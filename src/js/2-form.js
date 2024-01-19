@@ -97,6 +97,8 @@ function onSabmitForm(){
           const data = getItemFromLS(localStorageKey);
           console.log({ email, message });
         }
-}
+};
+
+
 
 
